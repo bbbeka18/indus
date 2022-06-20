@@ -1,0 +1,70 @@
+.vacal {
+    background: url(../assets/img/vacal/one.svg) ;
+    background-size: cover;
+    width: 100%;
+    height: 774px;
+    &__fon {
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 774px;
+    }
+    &__content {
+        text-align: center;
+        margin-top: 154px;
+    }
+    &__nick {
+        @include font ("C_BOX", 400, 48px, $yellow);    
+    }
+    &__title {
+        @include font ("C_BOX", 400, 48px, $white);    
+        margin-bottom: 58px;
+    }
+    &__mini--title {
+        @include font ("Poppins", 700, 24px, $white);
+        margin-top: 30px;
+    }
+    &__text {
+        @include font ("Poppins", 400, 16px, $white);
+        max-width: 1062px;
+        margin: 31px auto 45px;
+    }
+}
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: $white;
+
+}
+.swiper-pagination-bullet-active {
+    background: $yellow;
+}
+@media screen and (max-width:800px) {
+    .vacal {
+        &__content {
+            margin-top: 50px;
+        }
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        left:0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .vacal {
+        &__content {
+            margin-top: 20px;
+        }
+        &__title,
+        &__nick {
+            margin-bottom: 0;
+            font-size: 32px;
+        }
+        &__mini--title {
+            margin-top: 0;
+        }
+    }
+}

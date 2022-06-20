@@ -1,0 +1,11 @@
+@mixin font ($myshyk, $emirlan, $erjan, $rahim) {
+    font-family: $myshyk;
+    font-weight: $emirlan;
+    font-size: $erjan;
+    color: $rahim;
+}
+@mixin btn ($width, $height, $background) {
+    width:$width;
+    height:$height;
+    background:$background;
+}

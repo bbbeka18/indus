@@ -1,0 +1,54 @@
+.header {
+    &__left {
+        @include font("Poppins", 400, 12px, $white);
+        padding-top: 37px;
+        padding-bottom: 38px;
+        align-items: center;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__glava {
+        display: flex;
+        margin-top: 36px;
+        margin-bottom: 38px;
+        align-items: center
+    }
+    &__link {
+        @include font("Poppins", 400, 12px, $white);
+    }
+    &__stail {
+        margin-left: 38px;
+    }
+    &__logo {
+        margin-top: 12px;
+        margin-bottom: 13px;
+        margin-left: 113px; 
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .header {
+        &__left {
+            display: none;
+        }
+        &__glava {
+            display: none;
+        }
+        &__logo {
+            margin-left: 0;
+        }
+    }
+    
+}
+@media screen and (max-width:555px) {
+    .header {
+        &__icon {
+            width: 100px;
+        }
+        
+    }
+}

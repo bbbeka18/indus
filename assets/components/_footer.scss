@@ -1,0 +1,58 @@
+.footer {
+    .palochka {
+        width: 100%;
+        height: 1px;
+        background: $white;
+    }
+    &__title {
+        @include font ("C_BOX", 400, 24px, $yellow);
+        margin-bottom: 42px;
+    }
+    &__hop {
+        @include font ("Poppins", 400, 16px, $white); 
+        margin-bottom: 15px;
+    }
+    &__our {
+        margin-top: 150px;
+        display: flex;
+        gap: 130px;
+        flex-wrap: wrap
+    }
+    &__hops {
+        @include font ("Poppins", 400, 16px, $white);
+        margin-left: 19px;
+    }
+    &__photo {
+        margin-bottom: 29px;
+        margin-top: 40px;
+    }
+    &__palochka {
+        width: 100%;
+        height: 1px;
+        background: $white;
+    }
+    &__bank {
+        @include font("Poppins", 300, 16px, $white);
+        text-align: center;
+    }
+    &__goal {
+        display: flex;
+        margin-bottom: 24px;
+    }
+    &__group {
+        padding: 25px 0 44px;
+    }
+    &__take {
+        margin-right: 44px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer {
+        &__our {
+            flex-wrap: wrap;
+        }
+        &__take  {
+            margin-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.amazing {
+    // &__content {
+    //     text-align: center;
+    // }
+    &__off {
+        @include font ("C_BOX", 400, 48px, $yellow);
+    }
+    &__title {
+        @include font ("C_BOX", 400, 48px, $white);
+        margin-top: 161px;
+        text-align: center;
+    }
+    &__mini--title {
+        @include font ("C_BOX", 400, 24px, $white);
+        
+    } 
+    &__price {
+        @include font ("Poppins", 700, 36px, $white);
+    }
+    &__power {
+        position: relative;
+        margin-right: 30px;
+    }
+    &__check {
+        position: absolute;
+        left: 27px;
+        
+        bottom: 50px;
+    }
+    &__our {
+        display: flex;
+    }
+    .swiper-slide-active {
+        transform: scaleY(1.15);
+        // height: 637px;   
+        transition: .5s;
+    }
+    &__serch {
+        display: none;
+    }
+    &__swiper {
+        padding-top: 137px;
+        padding-bottom: 110px;
+    }    
+    &__img {
+        width: 370px;
+        height: 558px;
+    }
+    &__pagination {
+        position: absolute;
+        bottom: -60px;
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    position: absolute;
+}
+@media screen and (max-width:1300px) {
+   .amazing {
+    &__power {
+        margin: 0 auto;
+        display: flex;
+        width: 370px;
+    }
+    
+   }
+   
+}
+
+
+@media screen and (max-width:450px) {
+   .amazing {
+    &__off,
+    &__title {
+        font-size: 32px;
+    }
+    
+    &__photo {
+        margin: 0 auto;
+        max-width: 290px;
+    }
+    &__img {
+        display: none;
+    }
+    &__serch {
+        display: block;
+    }
+    &__power {
+        max-width: 290px;
+    }
+    &__mini--title {
+        font-size: 20px;
+    }
+    &__price {
+        font-size: 30px;
+    }
+    &__check {
+        bottom: 5px;
+        
+    }
+   
+  
+   }
+   
+}

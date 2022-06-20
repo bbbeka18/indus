@@ -1,0 +1,172 @@
+.wine {
+    width: 100%;
+    background:  $darkblack;
+    &__mini--title {
+        @include font ("Poppins", 400, 20px, $white);
+    }
+    &__title {
+        @include font ("C_BOX", 400, 74px, $yellow);
+        margin-bottom: 12px;
+        margin-top: 47px
+    }
+    &__nick {
+        @include font ('Poppins', 400, 36px, $white);
+        margin-bottom: 52px;
+    }
+    &__text {
+        @include font ('Poppins', 300, 18px, $white);
+        max-width: 526px;
+        margin-bottom: 64px;
+    }
+    &__btns {
+        display: flex;
+    }
+    &__first--btn {
+        margin-right: 30px;
+        background: $yellow;
+        padding: 23px 47px;
+        @include font ('Poppins', 500, 24px, #1f1f1f);
+    }
+    &__second--btn {
+        margin-left: 30px;
+        background: $yellow;
+        padding: 23px 47px;
+        @include font ('Poppins', 500, 24px, #1f1f1f);
+    }
+    &__first--btn:hover {
+        border: 1px solid $yellow;
+        background: $darkblack  ;
+        color: $white;
+        transition: 0.5s;
+    }    
+    &__second--btn:hover {
+        border: 1px solid $yellow;
+        background: $darkblack;
+        color: $white;
+        transition: 0.5s;
+    }
+    &__content {
+        display: flex;
+        padding-top: 275px;
+        padding-bottom: 210px;
+    }
+    &__left {
+        margin-right: 43px;
+    }
+    &__right {
+        width: 577px;
+        height: 482px;
+        border: 10px solid $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__circle {
+        width: 374px;
+        height: 374px;
+        background:$yellow;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.swiper-button-prev::after {
+    content: '';
+}
+.swiper-button-next::after {
+    content: '';
+}
+.swiper-button-next,
+.swiper-button-prev {
+    @include font ('Poppins', 400, 24px, $white);
+    position:absolute;
+    height: 45px;
+    background:$darkblack;
+}
+.swiper-button-next {
+    right: -15px;
+}
+.swiper-button-prev {
+    left: -15px;
+}
+.swiper-button-ster {
+    width: 100%;
+    height: 1px;
+    background: $white;
+    z-index: 1;
+}
+
+
+@media screen and (max-width:1245px) {
+    .wine {
+        &__content {
+            flex-wrap:wrap;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        &__right,
+        &__left {
+            margin: 0 auto;    
+        }
+        &__btns {
+            margin-bottom: 120px;
+        }
+    }
+    
+}
+@media screen and (max-width:730px) {
+    .wine {
+        &__right {
+            width: 400px;
+            height: 350px;
+        }
+        &__circle {
+            width: 250px;
+            height: 250px;
+
+        }
+        &__img {
+            width: 120px;
+        }
+    }
+}
+@media screen and (max-width:573px) {
+    .wine {
+        &__btns {
+            flex-wrap: wrap;
+            width: 250px;
+            margin: 40px auto;
+        }
+        &__first--btn,
+        &__second--btn {
+            margin: 20px auto ;
+            padding: 15px 25px;
+        }
+        &__title {
+            font-size: 48px;
+        }
+        &__nick {
+            font-size: 24px;
+        }
+        &__text {
+            font-size: 14px;
+            max-width: 310px;
+        }
+        &__right {
+            width: 200px;
+            height: 240px;
+            margin-top: 40px;
+        }
+        &__circle {
+            width: 120px;
+            height: 120px;
+        }
+        &__img {
+            width: 95px;
+        }
+    }
+}

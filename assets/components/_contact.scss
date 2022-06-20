@@ -1,0 +1,138 @@
+.contact {
+    margin: 150px 0;
+    &__title {
+        @include font ("C_BOX", 400, 48px, $white);
+        text-align: center;
+    }
+    &__text {
+        @include font ("Poppins", 300, 18px, $white);
+        line-height: 207.6%;
+        margin-top: 95px;
+        margin-bottom: 77px;
+    }
+    &__hops {
+        @include font ("Poppins", 300, 18px, $white);
+        margin-left: 30px;
+    }
+    &__left {
+        max-width: 466px;
+    }
+    &__svet {
+        @include font ("C_BOX", 400, 48px, $yellow);
+    }
+    &__goal {
+        display: flex;
+        margin-top: 43px;
+    }
+    &__take {
+        margin-right: 56px;
+    }
+    &__big {
+        display: flex;
+        margin-bottom: 150px;
+    }
+    &__login {
+        width: 100%;
+    }
+    &__btn {
+        @include font ("Poppins", 400, 24px, $white);
+        margin-left: 40px;
+        bottom: -18px;
+        position: relative;
+        width: fit-content;
+        background: $black;
+    }
+    &__right {
+        margin-left: 35px;
+        margin-top: 60px;
+    }
+    &__login {
+        background: $black;
+        border: 1px solid #FFFFFF;
+        width: 650px;
+        height: 64px;
+        color: $white;
+        padding-left: 20px;
+    }
+    &__logins {
+        background: $black;
+        border: 1px solid #FFFFFF;
+        width: 650px;
+        padding-left: 20px;
+        height: 133px;
+        color: $white;
+    }
+    &__sent {
+        margin-top: 29px;
+        background: $yellow;
+        @include font ("Poppins", 500, 36px, $black);
+        padding: 10px 54px;
+    }
+    &__photo {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width:1245px) {
+    .contact {
+        &__big {
+            // flex-direction: column;
+            flex-wrap: wrap ;
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__left {
+            margin: 0 auto;
+        }
+        &__goal {
+            justify-content: center;
+        }
+        &__btn {
+            left: 53px;
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .contact {
+        &__logins  {
+            max-width: 330px;
+        }
+        &__login {
+            max-width: 330px;
+        }
+        &__right {
+            margin: 0 auto;
+            max-width: 350px;
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .contact {
+        &__img  {
+            width: 35px;
+        }
+        &__take {
+            margin-right: 30px;
+        }
+        &__login {
+            max-width: 250px;
+        }
+        &__logins {
+            max-width: 250px;
+        }
+        &__hops {
+            margin-left: 10px;
+            text-align: left;
+            
+        }
+        &__svet,
+        &__title  {
+            font-size: 32px;
+        }
+        &__goal {
+            justify-content:start;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.news {
+    background: $darkblack;
+    padding:57px 0 63px;
+    &__title {
+        @include font ("C_BOX", 400, 48px, $yellow);
+    }
+    &__mini--title {
+        @include font ("Poppins", 400, 18px, $white);
+        margin-top: 24px;
+    }
+    &__their {
+        text-align: center;
+    }
+    &__pochta {
+        @include font ("Poppins", 400, 18px, $white );
+        background: $black;
+        padding: 19px 34px;
+        color: $white;
+        border: none;
+    }
+    &__knopka {
+        @include font ("Poppins", 400, 18px, $black);
+        background: $yellow;
+        padding: 19px 19px;
+        border: none;
+        width: 127px;
+    }
+    &__info {
+        display: flex;
+        justify-content: center;
+        margin-top: 69px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .news {
+        &__info {
+            max-width: 300px;
+            margin: 70px auto 0;
+            flex-wrap: wrap;
+        }
+        &__knopka {
+            margin-top: 50px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+    }
+}

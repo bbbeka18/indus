@@ -1,0 +1,65 @@
+.each {
+    margin-top: 190px;
+    &__description {
+        @include font("Poppins", 300, 16px, $white);
+    }
+    &__up {
+        @include font("C_BOX", 400, 24px, $white);
+    }
+    &__title {
+        @include font("C_BOX",400, 96px, $white);
+    }
+    &__link {
+        @include font("C_BOX", 400, 16px, #E2B024);
+        position: relative;
+    }
+    &__content {
+        display: flex;
+        text-align: center;
+    }
+    &__span {
+        @include font("C_BOX", 400, 96px, $yellow)
+    }
+    &__bottom {
+        margin-top: 35px;
+    }
+    &__info {
+        max-width: 745px;
+        margin: 0 auto;
+    }
+   
+}
+@media screen and (max-width:820px) {
+    .each {
+        &__up {
+            font-size: 16px;
+        }
+        &__title {
+            font-size: 64px;
+        }
+        &__span {
+            font-size: 64px;
+        }
+        &__description {
+            font-size: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        &__img {
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width:545px) {
+    .each {
+        &__title {
+            font-size: 48px;
+        }
+        &__span {
+            font-size: 48px;
+        }
+        &__description {
+           max-width: 250px;
+        }
+    }
+}

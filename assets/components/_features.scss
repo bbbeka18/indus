@@ -1,0 +1,105 @@
+.features {
+    margin-top: 155px ;
+    &__content {
+        background: $darkblack;
+        display: flex;
+    }
+    &__title {
+        @include font ("C_BOX", 400, 48px, $white);
+        text-align: center;
+        margin-bottom: 58px;
+    }
+    &__nick {
+        @include font ("C_BOX", 400, 48px, $yellow);
+    }
+    &__info {
+        margin-left: 30px;
+    }
+    &__subtitle {
+        @include font ('Poppins', 600, 24px, $white);
+        margin: 63px 0 8px;
+    }
+    &__item {
+        @include font ('Poppins', 400, 18px, $white);
+    }
+    &__text {
+        @include font ('Poppins', 300, 18px, $white);
+        max-width: 512px;
+        margin:44px 30px 45px 0;
+    }
+    &__link {
+        @include font ("C_BOX", 400, 18px, $yellow);
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &-button-next,
+    &-button-prev {
+        position: absolute;
+        top: 270px;
+    }
+    &-button-next {
+        right: -130px;
+    }
+    &-button-prev {
+        left: -130px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .features {
+        &-button-prev,
+        &-button-next {
+            top:  auto;
+            bottom: 20px;
+            z-index: 1;
+        }
+        &-button-prev {
+            right: 150px;
+            left: auto;
+        }
+        &-button-next {
+            right: 50px;
+        }
+
+    }
+}
+@media screen and (max-width:850px) {
+    .features {
+       &__content {
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+       }
+       &__img {
+        width: 100%;
+       }
+       &-button-prev,
+       &-button-next {
+           bottom: 10px;
+       }
+    }
+}
+@media screen and (max-width:440px) {
+    .features {
+       &-button-prev,
+       &-button-next {
+           bottom: -105px;
+       }
+       &-button-prev {
+        right: 100px;
+        left: auto;
+        }
+        &-button-next {
+            right: 0px;
+        }
+    }
+}
+@media screen and (max-width:340px) {
+    .features {
+       &-button-prev {
+        left: 30px;
+        }
+        &-button-next {
+            left: 144px;
+        }
+    }
+}
